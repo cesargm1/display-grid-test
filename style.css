@@ -1,0 +1,136 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	width: 90%;
+	height: 600px;
+	outline: 2px solid;
+	margin: 40px auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 0.2em;
+	/* grid-template-rows: repeat(5, 1fr); */
+	/* grid-template-areas:
+		"elemento1 elemento1 elemento1 elemento1 elemento2"
+		"elemento1 elemento1 elemento1 elemento1 elemento2"
+		"elemento1 elemento1 elemento1 elemento1 elemento2"
+		"elemento3 elemento3 elemento3 elemento3 elemento3"
+		"elemento4 elemento4 elemento4 elemento4 elemebto4"; */
+}
+
+.item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/*height: 100px;
+	width: 100px;*/
+	color: white;
+	column-gap: 1em;
+	font-size: 25px;
+	font-weight: bold;
+	filter: grayscale(50%);
+}
+
+.item1 {
+	background: url(https://lh3.googleusercontent.com/kooCx1qXd7jk4ZhFtjzd82J08hc_vazp2KQxRUny7JMrJnWT0HTxv13ebJcxD-K_CdxS06ui4qist9k-cVbsrfsT1WrFwm3Kqz9gKYaP);
+	background-position: center;
+	background-size: cover;
+	/* grid-column: 1/5; */
+	/* grid-row: 1/3; */
+	/* grid-area: elemento1; */
+}
+
+.item2 {
+	background: url(https://7598e1351c.cbaul-cdnwnd.com/4deaa9250fa46b3dcc7162441ca99487/200000009-777817873c/fondo2.png?ph=7598e1351c);
+	background-position: center;
+	background-size: cover;
+	/* grid-area: elemento2; */
+}
+
+.item3 {
+	background: url(https://images.squarespace-cdn.com/content/v1/5f6aabb931da8c194024f94a/1600915986116-O6A6O27BC8T094I8KJRO/noche-lunar.jpg);
+	background-position: center;
+	background-size: cover;
+	/* grid-area: elemento3; */
+}
+
+.item4 {
+	background: url(https://thumbs.dreamstime.com/b/planetas-y-galaxia-papel-pintado-de-la-ciencia-ficci%C3%B3n-belleza-del-espacio-profundo-123015144.jpg);
+	background-position: center;
+	background-size: cover;
+	/* grid-area: elemento4; */
+}
+.item5 {
+	background: url(https://cdn.wallpapersafari.com/69/84/4RQHom.jpg);
+	background-position: center;
+	background-size: cover;
+}
+.item6 {
+	background: url(https://img.freepik.com/fotos-premium/patron-textura-pared-ladrillo-bloque-color-verde-oscuro-fondo-tarjeta-dia-san-patricio-tambien-tiene-espacio-copia-texto_685067-3709.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+.item7 {
+	background-color: #c6c5a6;
+}
+
+.item8 {
+	background-color: #c0879f;
+}
+
+.item9 {
+	background-color: #a56166;
+}
+
+.item10 {
+	background-color: #eeeddb;
+}
+
+.item11 {
+	background-color: #0a0a0a;
+}
+
+.item12 {
+	background-color: #868d81;
+}
+
+/*para crear columnas en grid
+grid-template-columns: 30% 40% 30% la primera columna ocupa 30% la 2 ocupa 40% y la tercera ocupa 30%
+*/
+
+/*para crear filas en grid 
+
+grid-template-rows: 10% 10% 20% 60%;
+
+lo mismo que en colum pero esta vez con row
+*/
+
+/*
+con la propiedad fr evitaremos el problema de que sobre algun espacio el problema puede ser que si tenemos 3 columnas de 33% cada una sobraria un 1% 
+con la propiedad fr esto no pasaria ya que se adapta un ejemplo  grid-template-columns: 1fr 1fr 3fr; si tiene mas fr ocupara mas 
+*/
+
+/*tenemos la propiedad repeat pondremos el numero de filas y columnas que queremos  ejemplo
+grid-template-columns: repeat(3, 1fr);
+*/
+
+/*tambiem podemos unsar gap como en flex*/
+
+/*podemos utilizar
+	grid-row: 1/3;   2 labos seria un cubo y el 1 labo  solo concuerda con el primer cubo  el segundo borde es comun al primer cubo al final y segundo cubo  al principio  
+
+*/
+
+/*
+Ejemplo
+
+ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	  grid-template-columns: repeat columnas repetidas 
+	  auto-fit se adapta al contenido 
+	   minmax(300px, 1fr)) minimo 300px y maximo 1 fraccion 
+	   con esto conseguimos que los contenedores sean adaptables 
+
+  */
